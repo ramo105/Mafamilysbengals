@@ -1,92 +1,126 @@
+/* Imports de polices */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:wght@201&display=swap');
+
 /* Conteneur principal */
 .maintenance-container {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  flex-wrap: wrap;
   width: 100%;
-  
   background-color: black;
-  overflow: hidden; /* Évite le débordement */
+  overflow: hidden;
 }
 
 /* Style du body */
 body {
   margin: 0;
-  
   background-color: black;
   height: 100%;
   width: 100%;
   font-family: "Roboto", serif;
-  font-optical-sizing: auto;
   font-weight: 100;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
+  color: white; /* Texte par défaut en blanc */
 }
-
+.res{
+  color:  rgb(192,132,252);;
+  font-size: 22px;
+  font-family: monospace;
+}
+span{
+  color:  rgb(192,132,252);;
+  font-size: 24px;
+  font-family: monospace;
+  font-weight: 500;
+}
 /* Bloc principal */
 .Maintenance {
-  width: 100%; /* Prend toute la largeur */
-  max-width: 1200px; /* Largeur maximale pour les grands écrans */
+  width: 100%;
+  max-width: 1200px;
   display: flex;
+  height: 100%;
   flex-direction: column;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
   justify-content: center;
   align-items: center;
   text-align: center;
   background-color: black;
-  
-  /* Ajout de remplissage */
+  border-left: 1px solid white;
+  border-right: 1px solid white;
 }
-h1{
-  color: white;
+
+/* Titre principal */
+ .main-title {
+  color: white; /* Texte en blanc */
   font-family: "Roboto", serif;
   font-optical-sizing: auto;
-  font-weight: 301;
+  font-weight: 501; /* Poids conforme à votre code initial */
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-.Header{
-  width: 100%;
-  border-bottom: 0.5px solid #989898;
-}
-.main-title {
+  font-variation-settings: "wdth" 100;
   text-transform: uppercase;
-  font-weight: bold;
   animation: growShrink 2s infinite;
 }
 
+@keyframes growShrink {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Header */
+.Header {
+  width: 100%;
+  border-bottom: 0.5px solid #989898;
+}
+
+/* Contenu principal */
 .maintenance-top {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 1000px;
-  max-height: 1500px;
   width: 100%;
   margin: 20px;
 }
-.video-class{
-   width: 500px;
-   max-height: 500px;
-   height: 350px;
+
+.video-class {
+  width: 500px;
+  max-height: 500px;
+  height: 350px;
 }
-.bottom{
-  
-  max-height: 350px;
-  margin-left: auto;
-  margin-right: auto;
-  width:800px ;
+
+/* Texte centré */
+.text-container, .bottom, .bottom-text {
+  text-align: start;
+  word-wrap: break-word;
+  max-width: 100%;
+  font-weight: 400;
+  font-family: 'Roboto';
+  font-size: 22px;
+  margin: 0 auto;
+  color: white; /* Assure que tous les textes restent blancs */
+}
+
+p.responsive-text {
+  font-size: 24px;
+}
+
+.bottom {
+  margin-top: 20px;
+}
+
+.bottom-text {
+  line-height: 1.5;
   text-align: center;
 }
-.bottom-text{
- text-align: start;
-}
-/* Conteneur logo et texte */
+
+/* Conteneur vidéo et texte */
 .logo-text-container {
   display: flex;
   flex-direction: row;
@@ -94,16 +128,7 @@ h1{
   justify-content: center;
   gap: 20px;
   width: 100%;
-}
-
-.image-class {
-  max-width: 100%; /* Assurez-vous que l'image ne dépasse pas la largeur de son conteneur */
-  height: auto;
-}
-
-.text-container {
-  max-width: 100%; /* Assurez-vous que le texte ne dépasse pas la largeur de son conteneur */
-  text-align: start;
+  color: white; /* Texte blanc par défaut */
 }
 
 /* Section des réseaux sociaux */
@@ -111,141 +136,126 @@ h1{
   margin-top: 20px;
   width: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   border-top: 0.5px solid #989898;
-  min-height: 200px;
-  justify-content: center;
+  padding-top: 10px;
 }
 
 .social-links {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
+  min-height: 250px;
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  gap: 20px;
+  margin-top: 40px;
 }
 
 .social-icon {
-  margin: 0 15px;
   text-decoration: none;
   font-size: 1.5rem;
-  display: inline-block;
-  cursor: pointer;
   color: thistle;
 }
 
 .social-icon:hover {
-  scale: 1.1;
-  transition: 1s ease;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
 }
 
-/* Icônes spécifiques */
+/* Effets sur les icônes spécifiques */
 .facebook:hover {
   color: rgb(118, 138, 255);
-  transition: 1.5s ease;
-}
-.twitter:hover {
-  color: rgb(169, 222, 255);
-  transition: 1.5s ease;
 }
 .instagram:hover {
   color: rgb(255, 99, 99);
-  transition: 1.5s ease;
+}
+.tiktok:hover {
+  color: rgb(138, 43, 226);
 }
 
-/* Style du texte */
-p {
-  font-size: 24px;
-  color: white;
-  font-weight: bold;
-}
-span{
-  color:  rgb(192,132,252);;
-  font-size: 24px;
-}
-.res{
-  color:  rgb(192,132,252);;
-}
-.Maintenance::before,
-.Maintenance::after {
-  pointer-events: none;
-}
-/*Footer*/
-.Footer{
+/* Footer */
+.Footer {
   height: 40px;
   width: 100%;
-  justify-content: center;
   display: flex;
+  justify-content: center;
   align-items: center;
   border-top: 0.5px solid #989898;
   text-align: center;
 }
-.text{
+
+.text {
   font-size: 18px;
+  color: white;
   font-weight: 400;
-  font-family: "Roboto", serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
- 
 }
-.final{
+
+.final {
   text-decoration: none;
   cursor: pointer;
   color: #bebebe;
 }
-.final:hover{
+
+.final:hover {
   border-bottom: 1px solid #989898;
-  font-weight: 300;
-  
 }
-/* Responsive */
-@media (max-width: 1024px) {
+
+/* Styles responsives */
+@media (max-width: 800px) {
   .logo-text-container {
     flex-direction: column;
     text-align: center;
   }
-  .image-class {
-    max-width: 70%;
+
+  .video-class {
+    width: 90%;
+    max-height: auto;
   }
+.Maintenance{
+  border-left: none;
+  border-right: none;
+}
   .text-container {
-    text-align: center;
+    text-align: start;
+    padding: 10px;
   }
-  .social-icons {
-    flex-direction: row;
-    justify-content: center;
+
+  .responsive-text {
+    font-size: 14px;
+  }
+
+  .bottom-text {
+    text-align: start;
   }
 }
 
 @media (max-width: 768px) {
-  .logo-text-container {
-    flex-direction: column;
-    align-items: center;
+  .main-title {
+    font-size: 2rem;
   }
-  .image-class {
-    max-width: 60%;
+  .bottom-text {
+    margin: 10px;
   }
-  .text-container {
-    text-align: center;
-  }
-  .social-icons {
-    flex-direction: row;
-    justify-content: center;
+ 
+
+  .Footer {
+    padding: 10px;
   }
 }
 
 @media (max-width: 480px) {
-  .logo-text-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+  .main-title {
+    font-size: 1.2rem;
   }
-  .image-class {
-    max-width: 50%;
+
+  .bottom-text {
+    margin: 10px;
+  }
+
+  .social-icons {
+    gap: 10px;
   }
 }
