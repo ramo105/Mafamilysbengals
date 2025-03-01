@@ -211,7 +211,7 @@ p.responsive-text {
   }
 
   .video-class {
-    width: 90%;
+    width: 100%;
     max-height: auto;
   }
 .Maintenance{
@@ -220,7 +220,7 @@ p.responsive-text {
 }
   .text-container {
     text-align: start;
-    padding: 10px;
+   
   }
 
   .responsive-text {
