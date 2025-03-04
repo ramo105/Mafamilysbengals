@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa6";
 import "./App.css";
 import videoSrc from "./ferfe.mp4"; // Remplacez par le chemin de votre vidéo
-
 const App = () => {
   
   return (
@@ -36,16 +35,7 @@ const App = () => {
               transition={{ delay: 1, duration: 1 }}
             >
               {/* Vidéo */}
-              <motion.video
-                src={videoSrc}
-                autoPlay
-                loop
-                muted
-                className="video-class"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1, duration: 1 }}
-              />
+              
 
               {/* Texte */}
               <div className="text-container">
@@ -71,15 +61,16 @@ const App = () => {
               transition={{ delay: 2.5, duration: 1 }}
               className="bottom-text"
             >
-              Nous travaillons sur une expérience unique pour vous !<br />
-              Patience... Notre site sera bientôt en ligne avec plein de nouveautés.
-              Restez à l'affût !
+              Encore un peu de patience...
+              On se retrouve bientôt pour partager avec vous notre aventure féline 
             </motion.p>
           </div>
         </div>
 
         {/* Réseaux sociaux */}
-        <div className="Maintenance-bottom">
+        <motion.div className="Maintenance-bottom" initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 3.5, duration: 1 }}>
           <motion.div
             className="social-links"
             initial={{ opacity: 0 }}
@@ -101,7 +92,17 @@ const App = () => {
               </a>
             </div>
           </motion.div>
-        </div>
+          <motion.video
+                src={videoSrc}
+                autoPlay
+                loop
+                muted
+                className="video-class"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 1, duration: 1 }}
+              />
+        </motion.div>
 
         {/* Footer */}
         <div className="Footer">

@@ -9,6 +9,8 @@
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
+  background-size: cover; /* Ajuste la taille */
+  background-position: center; /* Centre l’image */
   background-color: black;
   overflow: hidden;
 }
@@ -18,6 +20,7 @@ body {
   margin: 0;
   background-color: black;
   height: 100%;
+  background-attachment: fixed;
   width: 100%;
   font-family: "Roboto", serif;
   font-weight: 100;
@@ -25,23 +28,37 @@ body {
 }
 .res{
   color:  rgb(192,132,252);;
-  font-size: 22px;
+  font-size: 29px;
   font-family: monospace;
 }
 span{
   color:  rgb(192,132,252);;
-  font-size: 24px;
+  font-size: 35px;
   font-family: monospace;
-  font-weight: 500;
+  font-weight: 600;
 }
 /* Bloc principal */
 .Maintenance {
-  width: 100%;
   max-width: 1200px;
   display: flex;
   height: 100%;
   flex-direction: column;
   justify-content: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 70%, black 100%), url('./picture.jpg');
+  background-size: cover;
+  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
   align-items: center;
   text-align: center;
   background-color: black;
@@ -80,12 +97,13 @@ span{
 }
 
 /* Contenu principal */
-.maintenance-top {
+.Maintenance-top {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
+  min-height: 400px;
   margin: 20px;
 }
 
@@ -102,13 +120,13 @@ span{
   max-width: 100%;
   font-weight: 400;
   font-family: 'Roboto';
-  font-size: 22px;
+  font-size: 24px;
   margin: 0 auto;
   color: white; /* Assure que tous les textes restent blancs */
 }
 
 p.responsive-text {
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .bottom {
@@ -144,27 +162,37 @@ p.responsive-text {
 
 .social-links {
   text-align: center;
-  min-height: 250px;
+  min-height: 50px;
 }
 
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
   margin-top: 40px;
 }
-
 .social-icon {
   text-decoration: none;
-  font-size: 1.5rem;
-  color: thistle;
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
 }
 
 .social-icon:hover {
   transform: scale(1.1);
   transition: transform 0.3s ease-in-out;
 }
-
+.facebook{
+  height: 35px;
+  width: 35px;
+}
+.instagram{
+  height: 35px;
+  width: 35px;
+}
+.tiktok{
+  height: 35px;
+  width: 35px;
+}
 /* Effets sur les icônes spécifiques */
 .facebook:hover {
   color: rgb(118, 138, 255);
@@ -209,7 +237,10 @@ p.responsive-text {
     flex-direction: column;
     text-align: center;
   }
-
+  .maintenance-container {
+    background-size: contain; /* Réduit l’image tout en la gardant visible */
+    background-position: center;
+  }
   .video-class {
     width: 100%;
     max-height: auto;
@@ -257,5 +288,17 @@ p.responsive-text {
 
   .social-icons {
     gap: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .Maintenance {
+    background-size: cover; /* L’image reste bien ajustée */
+    background-position: calc(100%) center; /* Déplace vers la gauche progressivement */
+  }
+}
+@media (max-width: 480px) {
+  .Maintenance {
+    background-size: cover; /* L’image reste bien ajustée */
+    background-position: calc(50%) center; /* Déplace vers la gauche progressivement */
   }
 }
