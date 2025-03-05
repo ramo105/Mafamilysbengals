@@ -108,9 +108,9 @@ span{
 }
 
 .video-class {
-  width: 500px;
+  
   max-height: 500px;
-  height: 350px;
+
 }
 
 /* Texte centré */
@@ -193,6 +193,9 @@ p.responsive-text {
   height: 35px;
   width: 35px;
 }
+.video-class {
+  min-width: 600px;
+}
 /* Effets sur les icônes spécifiques */
 .facebook:hover {
   color: rgb(118, 138, 255);
@@ -242,7 +245,6 @@ p.responsive-text {
     background-position: center;
   }
   .video-class {
-    width: 100%;
     max-height: auto;
   }
 .Maintenance{
