@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa6";
 import "./App.css";
-import videoSrc from "./ferfe.mp4"; // Remplacez par le chemin de votre vidéo
+import videoSrc from "./ferfe.gif"; // Remplacez par le chemin de votre vidéo
 const App = () => {
   
   return (
@@ -92,7 +92,7 @@ const App = () => {
               </a>
             </div>
           </motion.div>
-          <motion.video
+          <motion.img
                 src={videoSrc}
                 autoPlay
                 loop
