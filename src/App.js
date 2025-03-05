@@ -16,7 +16,7 @@ const App = () => {
             transition={{ duration: 1 }}
             className="main-title"
           >
-            Site en construction 🚧
+            Site en construction 
           </motion.h1>
         </div>
 
@@ -78,7 +78,7 @@ const App = () => {
             transition={{ delay: 3.5, duration: 1 }}
           >
             <h1 className="res">
-              Suivez-nous sur les réseaux sociaux pour ne rien manquer ! 📲
+              Suivez-nous sur les réseaux sociaux pour ne rien manquer ! 
             </h1>
             <div className="social-icons">
               <a href="https://www.facebook.com/profile.php?id=100085957803016" className="social-icon" target="_blank" rel="noopener noreferrer">
