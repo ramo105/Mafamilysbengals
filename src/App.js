@@ -87,7 +87,7 @@ const App = () => {
               <a href="https://www.instagram.com/mafamilysbengals/?fbclid=IwY2xjawIt4VdleHRuA2FlbQIxMAABHQbpapk66CcszyjW68P64SrS_gYFdfvbZGrYDOyM-WigXGM_d87oeYN1Pg_aem_NiuPELI3wzf5vkDPFr57OQ#" className="social-icon" target="_blank" rel="noopener noreferrer">
                 <FaInstagram size={30} className="instagram" />
               </a>
-              <a href="https://www.tiktok.com" className="social-icon" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.tiktok.com/@mafamilysbengals" className="social-icon" target="_blank" rel="noopener noreferrer">
                 <FaTiktok size={30} className="tiktok" />
               </a>
             </div>
@@ -107,7 +107,7 @@ const App = () => {
         {/* Footer */}
         <div className="Footer">
           <p className="text">
-            Powered by <a href="https://www.facebook.com" className="final">Mafamily's bengals</a>
+            Powered by <a href="https://www.facebook.com/profile.php?id=100085957803016" className="final">Mafamily's bengals</a>
           </p>
         </div>
       </div>
