@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:wght@201&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Pacifico&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 /* Conteneur principal */
 .maintenance-container {
   display: flex;
@@ -28,19 +29,36 @@ body {
   color: white; /* Texte par défaut en blanc */
 }
 .res{
-  color:  rgb(192,132,252);;
+  
   font-size: 29px;
-  font-family: "Yellowtail", cursive;
-  font-weight: 100;
+  color:rgb(143,28,143);
+  text-shadow: 
+    -1px -1px 0 white,  
+     -1px -1px 0 white,
+    -1px  1px 0 white,
+     1px  1px 0 white;
+  font-size: 30px;
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
   font-style: normal;
+  
 }
 span{
-  color:  rgb(192,132,252);;
+
+  color:rgb(143,28,143);
+  text-shadow: 
+    -1px -1px 0 white,  
+     -1px -1px 0 white,
+    -1px  1px 0 white,
+     1px  1px 0 white;
   font-size: 30px;
-  font-family: "Yellowtail", cursive;
-  font-weight: 100;
+  font-family: "Sour Gummy", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
   font-style: normal;
 }
+
 /* Bloc principal */
 .Maintenance {
   max-width: 1200px;
@@ -131,20 +149,25 @@ span{
   font-size: 24px;
   margin: 0 auto;
   color: white; /* Assure que tous les textes restent blancs */
+  
 }
 
 p.responsive-text {
   font-size: 30px;
+  font-family: "Akaya Kanadaka", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .bottom {
   margin-top: 20px;
+  
 }
 
 .bottom-text {
   line-height: 1.5;
   text-align: center;
-  font-family: "Shadows Into Light", cursive;
+  font-family: "Akaya Kanadaka", system-ui;
   font-weight: 400;
   font-style: normal;
 }
@@ -232,7 +255,7 @@ p.responsive-text {
 .text {
   font-size: 20px;
   color: white;
-  font-family: "Shadows Into Light", cursive;
+  font-family: "Akaya Kanadaka", system-ui;
   font-weight: 400;
   font-style: normal;
 }
@@ -242,6 +265,9 @@ p.responsive-text {
   cursor: pointer;
   color: #bebebe; 
   margin-left: 10px;
+  font-family: "Akaya Kanadaka", system-ui;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .final:hover {
@@ -304,7 +330,7 @@ p.responsive-text {
   }
 
   .social-icons {
-    gap: 10px;
+    gap: 20px;
   }
 }
 @media (max-width: 600px) {
