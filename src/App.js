@@ -16,7 +16,7 @@ const App = () => {
             transition={{ duration: 1 }}
             className="main-title"
           >
-            Site en construction 
+            Siteweb en construction 
           </motion.h1>
         </div>
 
